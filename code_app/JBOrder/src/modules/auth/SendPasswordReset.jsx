@@ -1,4 +1,4 @@
-export const Login = () => {
+export const SendPasswordReset = () => {
   return (
     <section className="vh-100" style={{ backgroundColor: "#144272" }}>
       <div className="container py-5 h-100">
@@ -9,10 +9,10 @@ export const Login = () => {
               style={{ borderRadius: "1rem" }}
             >
               <div className="card-body p-5 text-center">
-                <h3 className="mb-3">Login</h3>
+                <h3 className="mb-3">Restablecer contraseña</h3>
 
                 <div className="mb-3">
-                  <img id="user_1" src="/icons/user_1.png" style={{width: 80, height:80}}/>
+                  <img id="user_1" src="/icons/user_2.png" style={{width: 80, height:80}}/>
                 </div>
 
                 <div className="form-outline mb-4">
@@ -27,11 +27,11 @@ export const Login = () => {
 
                 <div className="form-outline mb-4">
                   <input
-                    type="password"
-                    id="password"
-                    name="password"
+                    type="email"
+                    id="email"
+                    name="email"
                     className="form-control form-control-lg"
-                    placeholder="Contraseña"
+                    placeholder="email@"
                   />
                 </div>
 
@@ -39,10 +39,11 @@ export const Login = () => {
                   className="btn btn-primary btn-lg w-100 mb-2"
                   type="submit"
                 >
-                  Autenticar
+                  Enviar
                 </button>
 
-                <a href="#">Olvidó contraseña</a>
+                <a href="#">Login</a>
+
               </div>
             </div>
           </div>
