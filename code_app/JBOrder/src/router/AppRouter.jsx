@@ -1,6 +1,11 @@
 import { Navigate, Route, Routes } from "react-router-dom";
+
+
+
 import { CategoriesView } from "../modules/products";
 import { Login, ResetPassword, SendPasswordReset } from "../modules/auth";
+import { Main } from "../modules/main";
+
 
 export const AppRouter = () => {
   const status = "not-authenticated";
@@ -18,6 +23,7 @@ export const AppRouter = () => {
       <Route path="login" element={<Login />} />
       <Route path="loginR" element={<ResetPassword />} />
       <Route path="loginS" element={<SendPasswordReset />} />
+      <Route path="main" element={<Main />} />
 
     </Routes>
   );
