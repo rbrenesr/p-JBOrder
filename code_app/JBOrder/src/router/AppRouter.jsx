@@ -8,22 +8,22 @@ import { Main } from "../modules/main";
 
 
 export const AppRouter = () => {
-  const status = "not-authenticated";
+  const status = "-authenticated";
 
   return (
     <Routes>
       {/* {status === "authenticated" ? (
-        <Route path="/*" element={<CategoriesView />} />
+        <Route path="/*" element={<Main />} />
       ) : (
-        <Route path="/auth/*" element={<ResetPassword />} />
-      )}
+        <Route path="/auth/*" element={<Login />} />
+      )} */}
 
-      <Route path="/*" element={<Navigate to="/auth/login" />} /> */}      
-
-      <Route path="login" element={<Login />} />
-      <Route path="loginR" element={<ResetPassword />} />
-      <Route path="loginS" element={<SendPasswordReset />} />
-      <Route path="main" element={<Main />} />
+      <Route path="/*" element={<Navigate to="authL" />} />      
+         
+      <Route path="/authL" element={<Login />} /> 
+      <Route path="/authR" element={<ResetPassword />} />
+      <Route path="/authS" element={<SendPasswordReset />} />
+      <Route path="/mainM" element={<Main />} />  
 
     </Routes>
   );
